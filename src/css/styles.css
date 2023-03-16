@@ -24,7 +24,6 @@ main::after{
 
 .informacoes .logo{
     max-width: 350px;
-    filter: invert(1);
     margin-bottom: 80px;
 }
 
