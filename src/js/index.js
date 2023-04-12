@@ -68,3 +68,15 @@ function desativarBotaoSelecionado() {
     const botaoSelecionado = document.querySelector('.selecionado');
     botaoSelecionado.classList.remove('selecionado');
 }
+
+//possibilita o elemento de video ser passado até em caso de video vindo pelo youtube
+var video = document.createElement('iframe')
+
+video.width = 516;
+video.height = 315;
+video.src = 'https://www.youtube.com/embed/0SSYzl9fXOQ';
+video.frameBorder = 0;
+video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+
+var div = document.getElementById('video-player');
+div.appendChild(video);
